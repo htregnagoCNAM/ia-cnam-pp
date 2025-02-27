@@ -10,12 +10,9 @@ def is_palindrome(input_string):
 newList = [10, 4, 6, 3, 89, 45]
 print(f"La liste initiale : {newList}")
 
-sortedSquaredList = sorted(squared_list(newList))
-print(f"La liste triée au carré : {sortedSquaredList}")
+print(f"La liste triée au carré : {sorted(squared_list(newList))}")
 
 print(f"Le tuple min/max : {min_max(newList)}")
 
-kayak = "KAYAK"
-toto = "TOTO"
-print("KAYAK est un palindrome" if is_palindrome(kayak) else "KAYAK n'est pas un palindrome")
-print("TOTO est un palindrome" if is_palindrome(toto) else "TOTO n'est pas un palindrome")
+print("KAYAK est un palindrome" if is_palindrome("KAYAK") else "KAYAK n'est pas un palindrome")
+print("TOTO est un palindrome" if is_palindrome("TOTO") else "TOTO n'est pas un palindrome")
